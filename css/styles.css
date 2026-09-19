@@ -1,4 +1,4 @@
-﻿/* ============================================
+/* ============================================
    Homework Two - Advanced Selectors & Display
    Author: Student
    ============================================ */
@@ -13,32 +13,24 @@
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #333;
-    background-color: #fff;
+    background-color: #d3d3d3;
 }
 
 /* ----- SKIP TO MAIN CONTENT (Accessibility) ----- */
 .skip-link {
-    position: absolute;
-    top: -100%;
-    left: 0;
-    background-color: #003366;
-    color: #ffffff;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    z-index: 9999;
-    border-radius: 0 0 8px 0;
-}
-
-.skip-link:focus {
-    top: 0;
+    display: block;
+    background-color: #ffff00;
+    color: #0000ff;
+    padding: 4px 8px;
+    font-size: 0.85rem;
+    text-decoration: underline;
 }
 
 /* ----- HEADER / NAV ----- */
 header {
-    background-color: #b0d4e8;
+    background-color: #ffff00;
     padding: 8px 0;
+    text-align: center;
 }
 
 /* Step 3: nav uses inline-block with width ~80% */
@@ -46,41 +38,45 @@ nav {
     display: inline-block;
     width: 80%;
     vertical-align: middle;
+    text-align: center;
 }
 
 /* Step 4: Descendant selector - only img inside nav, width ~10% */
 nav img {
     width: 10%;
-    position: relative;
-    top: 20px;
     vertical-align: middle;
 }
 
 nav a {
     display: inline-block;
-    color: #003399;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 1rem;
+    color: #0000ff;
+    text-decoration: underline;
+    margin: 0 10px;
+    font-size: 0.9rem;
     vertical-align: middle;
 }
 
 nav a:hover {
-    text-decoration: underline;
     color: #660000;
 }
 
+/* Step 2: Comment out original li rule */
+/*
+li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+*/
+
 /* ----- MAIN ----- */
 main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 h1 {
     font-family: Georgia, serif;
     font-style: italic;
-    color: #4b0082;
+    color: #0000ff;
     text-align: center;
     font-size: 2rem;
     margin: 20px 0;
@@ -95,20 +91,12 @@ p {
 }
 
 a {
-    color: #003399;
+    color: #0000ff;
 }
 
 a:hover {
     color: #660000;
 }
-
-/* Step 2: Comment out original li rule */
-/*
-li {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-*/
 
 /* ----- GRID CLASS (Steps 5, 6, 7) ----- */
 .grid {
@@ -116,10 +104,10 @@ li {
     grid-template-columns: 40% 40%;
     justify-content: center;
     align-items: start;
-    row-gap: 20px;
-    gap: 20px;
-    background-color: #ffff00;
-    padding: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+    background-color: #808080;
+    padding: 10px;
 }
 
 /* Step 6: Descendant selector - images ONLY inside .grid */
@@ -130,7 +118,7 @@ li {
 
 .grid figure {
     margin: 0;
-    padding: 4px;
+    padding: 0;
 }
 
 .grid figcaption {
@@ -147,20 +135,19 @@ li {
     justify-content: center;
     align-items: flex-start;
     gap: 8px;
-    background-color: #ffff00;
-    padding: 20px;
+    background-color: #808080;
+    padding: 10px;
 }
 
 .flex figure {
     margin: 0;
-    padding: 4px;
+    padding: 0;
     flex: 0 0 auto;
 }
 
 .flex img {
-    width: 120px;
-    height: 90px;
-    object-fit: cover;
+    max-width: 200px;
+    height: auto;
     display: block;
 }
 
@@ -173,14 +160,13 @@ li {
 
 /* ----- FOOTER ----- */
 footer {
-    border-top: 2px solid #ccc;
-    padding: 16px 20px;
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #555;
-    background-color: #f5f5f5;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #333;
+    background-color: #ffff00;
 }
 
 footer a {
-    color: #003399;
+    color: #0000ff;
 }
