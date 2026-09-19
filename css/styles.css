@@ -20,7 +20,7 @@ body {
 .skip-link {
     display: block;
     background-color: #ffff00;
-    color: #0000ff;
+    color: #0000b3;
     padding: 4px 8px;
     font-size: 0.85rem;
     text-decoration: underline;
@@ -49,7 +49,7 @@ nav img {
 
 nav a {
     display: inline-block;
-    color: #0000ff;
+    color: #0000b3;
     text-decoration: underline;
     margin: 0 10px;
     font-size: 0.9rem;
@@ -76,7 +76,7 @@ main {
 h1 {
     font-family: Georgia, serif;
     font-style: italic;
-    color: #0000ff;
+    color: #0000b3;
     text-align: center;
     font-size: 2rem;
     margin: 20px 0;
@@ -91,7 +91,7 @@ p {
 }
 
 a {
-    color: #0000ff;
+    color: #0000b3;
 }
 
 a:hover {
@@ -168,5 +168,5 @@ footer {
 }
 
 footer a {
-    color: #0000ff;
+    color: #0000b3;
 }
