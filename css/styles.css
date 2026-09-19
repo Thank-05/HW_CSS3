@@ -123,7 +123,7 @@ a:hover {
 
 .grid figcaption {
     font-size: 0.85rem;
-    color: #333;
+    color: #000;
     text-align: center;
     padding: 4px 0;
 }
@@ -153,7 +153,7 @@ a:hover {
 
 .flex figcaption {
     font-size: 0.75rem;
-    color: #333;
+    color: #000;
     text-align: center;
     padding: 2px 0;
 }
